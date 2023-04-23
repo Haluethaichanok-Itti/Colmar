@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    
+color: rgb(74,74,74);  
 font-family: Arial, Helvetica, sans-serif;
 }
 .desktop{
@@ -14,23 +14,28 @@ font-family: Arial, Helvetica, sans-serif;
     padding-right: 24px;
     height: 64px;
 }
-.logo{
-    display: inline-flex;
+
+.logo a{
+    display: flex;
     align-items: center;
-    font-size: 32px;
+    line-height: 32px;
+    
 }
 .logo img{
+    
     height: 32px;
 }
 .logo a{
     text-decoration: none;
-    color: black;
+    color: rgb(74,74,74);  
 }
 
 div.desktop {
     display: flex;
     align-items: center;
     justify-self: space-between;
+    width: 100%;
+    box-sizing: border-box;
     height: 64px;
     padding-left: 24px;
 padding-right: 24px;
@@ -39,12 +44,12 @@ padding-right: 24px;
 .desktop ul{
     list-style-type: none;
     display: flex;
-    gap:1rem;
-    padding-right: 24px;
+    gap:16px;
+      
 }
 .desktop ul a{
     text-decoration: none;
-    color: black;
+    color: rgb(74,74,74);  
 }
 .d1{
     display: flex;
@@ -62,28 +67,35 @@ padding-right: 24px;
 .right1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: left;
+    width: 50%;
    font-size: 20px;
    flex-wrap: wrap;
 }
+.contentRight1{
+    color: rgb(74,74,74);
+    width: 55%;
+}
 .btn{
     padding-top: 8px;
-    padding-bottom: 8px
-    color:aliceblue;
+    padding-bottom: 8px;
+    color : aliceblue;
     background-color: rgb(74,74,74);
+    width: 100%;
 }
 /*กล่อง2*/
 .d2{
     display: flex;
     justify-content: center;
     background-color: rgb(243,245,245);
-    
+    width: 100%;
+    padding-top: 0px;
 }
 
 .left2{
+    padding-top: 32px;
     width: 60%;
-    padding: 32px 24px;
+    padding-left: 24px;
 }
 .picl2 img{
     width: 100%;
@@ -98,7 +110,7 @@ content p{
     padding-bottom: 32px;
 }
 .right2{
-
+padding-top: 16px;
     width: 40%;
 
 }
@@ -107,11 +119,22 @@ content p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-    gap: 16px;
+   width: 100%;
 }
 .picb2{
+  width: 35%;
     padding: 16px 16px;
+}
+.boxr2 img{
+    width: 100%;
+}
+.textb2{
+    width: 65%;
+   
+}
+.textb2 p{
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .textb2 a:hover{
     text-decoration: none;
@@ -183,7 +206,7 @@ video{
 }
 .right4 a{
     text-decoration: none;
-color:black;
+
 }
 .r{
     
@@ -203,10 +226,25 @@ color:black;
     width: 65%;
 }
 footer{
+    display: flex;
     box-sizing: border-box;
     padding-top: 16px;
     padding-left: 24px;
     background-color: rgb(243,245,245);
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.fleft{
+    width: 90%;
+}
+.fright{
+    width: 10%;
+    display: flex;
+    gap:2rem;
+    padding-right: 2rem;
+   justify-content: flex-end;
 }
 .textb2 a{
 text-decoration: none;
@@ -214,7 +252,13 @@ color: rgb(89,153,227);
 }
 .item a{
     text-decoration: none;
-    color: black;
+    color: rgb(74,74,74);  
+}
+.right4 h2{
+    color: rgb(74,74,74);  
+}
+.right4 p{
+    color: rgb(74,74,74);  
 }
 /*desktop*/
 @media only screen and (min-width: 481px){
@@ -250,30 +294,40 @@ div.main_desktop{
 display:none;
 }
 .right1 h1{
-    padding-top: 32px;
+    padding-top: 0%;
     padding-bottom: 32px;
 }
 .right1 p{
     padding-bottom: 24px;
 }
 .left1{
+    box-sizing: border-box;
     padding: 0%;
-    margin-top: 0%;
+    margin: 0%;
     width: auto;
 }
 
 .left1 img{
-    
     width: 100%;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
 }
 .d1{
+    box-sizing: border-box;
+    width: 100%;
     margin-top: 0%;
     padding: 0%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: rgb(219,219,219);
 }
 .right1{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
     padding: 32px 16px;
 
 }
@@ -328,5 +382,7 @@ footer{
     text-decoration: none;
     color: rgb(89,153,227);
     }
-    
+ .fright{
+    display: none;
+ }   
 }
